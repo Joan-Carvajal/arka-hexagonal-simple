@@ -51,6 +51,10 @@ public class Product {
         return category;
     }
 
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
     public void reduceStock(int stock) {
         if (stock> this.stock) throw new IllegalArgumentException("stock exceeded");
         this.stock -= stock;
